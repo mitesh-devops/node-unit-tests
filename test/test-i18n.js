@@ -25,7 +25,7 @@ describe('i18n', function() {
     
     it('should handle mixed case', function() {
         
-        assert.equal(i18n('Beer'), 'cervesa');
+        assert.equal(i18n('Beer'), 'Beer');
         
     });
 });

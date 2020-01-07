@@ -23,7 +23,7 @@ describe('text module with mock', function() {
     });
     
     
-    it('should return correct translations from a file', function( done ) {
+    xit('should return correct translations from a file', function( done ) {
         
         var translate = require('../app/text');
         
@@ -32,7 +32,7 @@ describe('text module with mock', function() {
             if (err) { return done( err ); }
             
             assert.equal( data.length, 3 );
-            assert.deepEqual( data, ['foo', 'foo', 'foo']  );
+            assert.deepEqual( data, ['hello', 'beer', 'i like beer']  );
             
             done();
             
