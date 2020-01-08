@@ -10,7 +10,9 @@ USER node
 
 RUN npm install
 
-COPY --chown=node:node . .
+COPY . .
+
+RUN chown node:node .
 
 EXPOSE 3000
 
